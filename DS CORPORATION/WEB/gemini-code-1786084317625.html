@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dosie Care - Cold Burgundy Editorial Design</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* =========================================================
+           CSS VARIABLES & SYSTEM TOKENS
+           ========================================================= */
+        :root {
+            --bg-main: #FFF5F9;
+            --color-white: #FFFFFF;
+            --surface-soft: #FAF2F5;
+            --color-wine-deep: #56061D;
+            --color-wine-hover: #3B0212;
+            --color-text-body: #5C2635;
+            --border-subtle: #F0D5DD;
+            --border-light: #F9ECF0;
+            --shadow-subtle: 0 10px 40px rgba(86, 6, 29, 0.04);
+            --shadow-hover: 0 16px 48px rgba(86, 6, 29, 0.10);
+            --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        /* =========================================================
+           BASE STYLES
+           ========================================================= */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--color-text-body);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            line-height: 1.7;
+            letter-spacing: -0.01em;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, .font-serif {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            color: var(--color-wine-deep);
+            font-weight: 700;
+            line-height: 1.15;
+            letter-spacing: -0.02em;
+        }
+
+        p, .subtext {
+            color: var(--color-text-body);
+            font-weight: 400;
+            font-size: 0.95rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Nút CTA Primary (#56061D) */
+        .btn-cta {
+            background-color: var(--color-wine-deep);
+            color: #FFFFFF;
+            padding: 0.9rem 2.4rem;
+            border-radius: 40px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 600;
+            font-size: 0.88rem;
+            letter-spacing: 0.5px;
+            border: none;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            transition: var(--transition-smooth);
+        }
+
+        .btn-cta:hover {
+            background-color: var(--color-wine-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(86, 6, 29, 0.25);
+        }
+
+        .badge-tag {
+            display: inline-block;
+            color: var(--color-wine-deep);
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+        }
+
+        /* =========================================================
+           LAYOUT COMPONENTS
+           ========================================================= */
+        /* Header */
+        header {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 1.5rem 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid var(--border-subtle);
+            backdrop-filter: blur(16px);
+        }
+
+        .logo {
+            font-size: 1.9rem;
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 700;
+            color: var(--color-wine-deep);
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 3rem;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            font-size: 0.9rem;
+            color: var(--color-text-body);
+            transition: var(--transition-smooth);
+        }
+
+        .nav-links a:hover {
+            color: var(--color-wine-deep);
+        }
+
+        /* Hero Container (Mảng trắng chủ đạo) */
+        .hero-container {
+            padding: 4rem 8% 2rem 8%;
+        }
+
+        .hero-card-white {
+            background-color: var(--color-white);
+            border-radius: 28px;
+            padding: 5rem 6%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid var(--border-subtle);
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .hero-text {
+            max-width: 50%;
+        }
+
+        .hero-text h1 {
+            font-size: 3.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-text p {
+            font-size: 1.05rem;
+            margin-bottom: 2.5rem;
+            max-width: 90%;
+        }
+
+        .hero-image-frame {
+            width: 42%;
+            height: 400px;
+            background-color: var(--surface-soft);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--border-light);
+            color: var(--color-wine-deep);
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.3rem;
+            font-style: italic;
+        }
+
+        /* Services Grid */
+        .services-section {
+            padding: 5rem 8%;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-size: 3rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .info-card-white {
+            background-color: var(--color-white);
+            border: 1px solid var(--border-subtle);
+            border-radius: 20px;
+            padding: 3rem 2.2rem;
+            box-shadow: var(--shadow-subtle);
+            transition: var(--transition-smooth);
+        }
+
+        .info-card-white:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--color-wine-deep);
+        }
+
+        .info-card-number {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            color: var(--color-wine-deep);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .info-card-white h3 {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--color-white);
+            padding: 5rem 8% 2.5rem 8%;
+            border-top: 1px solid var(--border-subtle);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .footer-col ul {
+            list-style: none;
+            margin-top: 1.2rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-col ul li a {
+            color: var(--color-text-body);
+            font-size: 0.92rem;
+            transition: var(--transition-smooth);
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--color-wine-deep);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 3rem;
+            margin-top: 3rem;
+            border-top: 1px solid var(--border-light);
+            font-size: 0.85rem;
+            color: var(--color-text-body);
+            opacity: 0.8;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero-card-white {
+                flex-direction: column;
+                padding: 3.5rem 2rem;
+                text-align: center;
+            }
+            .hero-text { max-width: 100%; margin-bottom: 3rem; }
+            .hero-text p { margin-left: auto; margin-right: auto; }
+            .hero-image-frame { width: 100%; height: 300px; }
+            .cards-grid { grid-template-columns: 1fr; }
+            .nav-links { display: none; }
+            .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <header>
+        <div class="logo">DOSIE CARE</div>
+        <ul class="nav-links">
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Liệu trình</a></li>
+            <li><a href="#">Bộ sản phẩm</a></li>
+            <li><a href="#">Triết lý</a></li>
+        </ul>
+        <button class="btn-cta">Đặt Lịch Hẹn</button>
+    </header>
+
+    <!-- HERO SECTION -->
+    <div class="hero-container">
+        <section class="hero-card-white">
+            <div class="hero-text">
+                <span class="badge-tag">#56061D Burgundy Palette</span>
+                <h1>Cân Bằng & Tái Tạo Làn Da Pure Love</h1>
+                <p>Chăm sóc da tối giản chuẩn Y khoa, kết hợp dưỡng chất tự nhiên mang lại vẻ đẹp sắc nét, kiêu kỳ và sang trọng.</p>
+                <button class="btn-cta">
+                    Tư Vấn Chuyên Sâu
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+            </div>
+            <div class="hero-image-frame">
+                [ #56061D Wine Visual Frame ]
+            </div>
+        </section>
+    </div>
+
+    <!-- SERVICES SECTION -->
+    <section class="services-section">
+        <div class="section-header">
+            <span class="badge-tag">Our Collection</span>
+            <h2>Dịch Vụ Nổi Bật</h2>
+            <p class="subtext">Được thiết kế riêng cho từng tình trạng da</p>
+        </div>
+
+        <div class="cards-grid">
+            <article class="info-card-white">
+                <span class="info-card-number">01</span>
+                <h3>Deep Hydra Therapy</h3>
+                <p>Cấp ẩm tầng sâu và phục hồi màng bảo vệ da tự nhiên, trả lại sự mịn màng thanh khiết.</p>
+            </article>
+
+            <article class="info-card-white">
+                <span class="info-card-number">02</span>
+                <h3>Cold Wine Glow</h3>
+                <p>Thắt chặt cấu trúc collagen với hợp chất chống oxy hóa chiết xuất từ men vang lạnh cao cấp.</p>
+            </article>
+
+            <article class="info-card-white">
+                <span class="info-card-number">03</span>
+                <h3>Skin Ritual Consultation</h3>
+                <p>Phân tích da chuyên sâu 1:1 cùng chuyên gia để thiết lập chu trình dưỡng da tối giản hiệu quả.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="logo" style="margin-bottom: 1rem;">DOSIE CARE</div>
+                <p style="max-width: 320px;">Thương hiệu làm đẹp cao cấp hướng tới sự tinh tế, thuần khiết và phong cách sống hiện đại.</p>
+            </div>
+            <div class="footer-col">
+                <h4 class="font-serif" style="font-size: 1.3rem; color: var(--color-wine-deep);">Điều Hướng</h4>
+                <ul>
+                    <li><a href="#">Dịch vụ spa</a></li>
+                    <li><a href="#">Sản phẩm chọn lọc</a></li>
+                    <li><a href="#">Về chúng tôi</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="font-serif" style="font-size: 1.3rem; color: var(--color-wine-deep);">Liên Hệ</h4>
+                <p style="margin-top: 1.2rem;">Email: contact@dosiecare.com</p>
+                <p style="margin-top: 0.4rem;">Hotline: 0123 456 789</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2026 Dosie Care. Cold Burgundy (#56061D) Design System.
+        </div>
+    </footer>
+
+</body>
+</html>
