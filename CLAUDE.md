@@ -24,8 +24,15 @@ Lưu ý:
 
 - Bà Trương Ngọc Ánh đóng BHXH từ tháng 09/2026, mức lương đóng 10.000.000 đồng/tháng.
 - Mỗi tháng nộp 3.200.000 đồng (công ty 21,5% + người lao động 10,5%).
-- Nội dung chuyển khoản nộp BHXH:
-  `0111537512DQC20 CONG TY TNHH DS CORPORATION nop BHXH BHYT BHTN BHTNLD-BNN T[MM]/[YYYY]`
+- Nội dung chuyển khoản nộp BHXH: ghi **đúng nguyên văn** cú pháp theo Thông báo số 873/TB-BHXH ngày 22/07/2025 của BHXH cơ sở Cầu Giấy:
+  `+BHXH+103+00+0111537512DQC20+00105+dong BHXH+`
+- Tài khoản thu (tên tài khoản: Bảo hiểm xã hội cơ sở Cầu Giấy), chọn 1 trong 5:
+  - 3743.0.9051833.92008: Phòng giao dịch số 9, Kho bạc Nhà nước Khu vực I
+  - 1507202901065: Agribank, Chi nhánh Cầu Giấy
+  - 2209801036: BIDV, Chi nhánh Thăng Long
+  - 901105000002: VietinBank, Chi nhánh Tây Hà Nội
+  - 0491008686668: Vietcombank, Chi nhánh Thăng Long
+- Bộ phận Kế toán BHXH cơ sở Cầu Giấy: 0243 791 0718. Cán bộ hướng dẫn hồ sơ: Lê Thị Vân, 0973517105.
 - Hồ sơ báo tăng: `DS CORPORATION/HCNS/NHÂN SỰ/BHXH/2026.10_Bo_sung_ho_so_bao_tang/`
 
 ## Chuẩn văn bản DS (mẫu v8)
