@@ -19,3 +19,8 @@
 ## Thông tin pháp nhân
 - CÔNG TY TNHH DS CORPORATION – MST 0111537512 – Tầng 4, Tòa nhà Sannam, 78 Duy Tân, P. Cầu Giấy, Hà Nội – 0912 789 788 – info@dosiecare.com – TGĐ: Bà Trương Ngọc Ánh.
 - Thương hiệu sản phẩm: Dosie's Care.
+
+## Nguyên tắc hợp tác OEM (gia công)
+- DS là chủ thương hiệu, bên đặt gia công và đứng tên công bố mỹ phẩm. Công thức phát triển theo đơn đặt hàng của DS **thuộc sở hữu DS**.
+- Sau khi ký hợp đồng, nhà máy phải bàn giao **toàn bộ** hồ sơ công thức: định lượng 100% (tên thương mại, INCI, CAS, % w/w, NCC, grade), quy trình sản xuất, IPC, spec/COA nguyên liệu, PIF đầy đủ (DS phải lưu PIF tại địa chỉ DS theo Thông tư 06/2011/TT-BYT).
+- Trong giai đoạn đàm phán (chưa ký): không ép công khai %, chỉ đề nghị bảo đảm thành phần chủ chốt trong khoảng có tác dụng như benchmark **mà không tăng giá**.
